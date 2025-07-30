@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url("/images/background.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+.player {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  max-width: 90%;
+}
+
+.album-art {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url("/images/background.avif");
+}
+
+.song-title {
+  font-size: 20px;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.artist {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.timeline-container {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.time {
+  font-size: 12px;
+  color: #333;
+  min-width: 40px;
+}
+
+.progress-slider {
+  flex: 1;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  height: 5px;
+  background: #ddd;
+  appearance: none;
+}
+
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 15px 0;
+}
+
+.control-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.control-btn:hover {
+  color: #007bff;
+}
+
+.volume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.volume .progress-input {
+  width: 100px;
+  height: 5px;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  appearance: none;
+}
+
+
+.music-list {
+  max-height: 150px;
+  margin-top: 15px;
+}
+
+.music-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+
+.music-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.music-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.music-item span {
+  font-size: 14px;
+  color: #333;
+}
